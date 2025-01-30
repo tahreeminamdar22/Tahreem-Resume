@@ -1,78 +1,77 @@
-body{
-    padding: 0px;
-    display: block;
+body {
+    padding: 0;
     font-size: 16px;
     padding: 10px;
+}
 
+h1 {
+    color: thistle;
 }
-h1{
-    color:thistle;
-}
+
 footer {
     text-align: center;
     background-color: grey;
 }
-#email{
-    padding-top: 0px;
+
+#email {
+    padding-top: 0;
 }
+
 #name {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     color: black;
 }
+
 .container {
     display: flex;
-   
 }
 
 .left {
     flex: 25%;
     padding: 20px;
 }
+
 .right {
     flex: 70%;
-    padding-left: 10px;
     padding: 20px;
 }
-.contactinfo{
-    background-color:thistle;
+
+.contactinfo {
+    background-color: thistle;
 }
 
-
-
-/* For desktops and larger screens */
-@media (max-width: 1024px) {
-    body {
-        font-size: 22px;
-        padding: 25px;
-    }
-    .left, .right { flex: 1;}
-   
-    .container {
-        flex-direction:column;
-        
-    }
-}
+/* Media Queries */
 @media (max-width: 1050px) {
     body {
-        font-size: 22px;
-        padding: 25px;
+        font-size: 20px;
+        padding: 20px;
     }
-    .left, .right { flex: 1;}
-   
+    
+    .left, .right {
+        flex: 1;
+    }
+    
     .container {
-        flex-direction:column;
-        
+        flex-direction: column;
+    }
+    
+    .contactinfo {
+        order: 1;
+    }
+    
+    .obj {
+        order: 2;
+    }
+    
+    .edu-cert {
+        order: 3;
+    }
+    
+    .skills {
+        order: 4;
+    }
+    
+    .projects {
+        order: 5;
     }
 }
-/*
-@media only screen and (max-width: 1690px){
-    body {
-        font-size: 13px;
-    }
-   
-    .container {
-        flex-direction:row;
-        background-color: aliceblue;
-    }
-}
-*/
