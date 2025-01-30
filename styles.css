@@ -49,10 +49,21 @@ footer {
    
     .container {
         flex-direction:column;
-        background-color: aliceblue;
+        
     }
 }
-
+@media (max-width: 1050px) {
+    body {
+        font-size: 22px;
+        padding: 25px;
+    }
+    .left, .right { flex: 1;}
+   
+    .container {
+        flex-direction:column;
+        
+    }
+}
 /*
 @media only screen and (max-width: 1690px){
     body {
