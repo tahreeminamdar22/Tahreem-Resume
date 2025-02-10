@@ -1,24 +1,13 @@
-function reorderElements() {
-    const container = document.querySelector(".container");
+// Get the container element
+const reorder = document.querySelector(".container");
 
-    // Only reorder if screen width is 1050px or less
-    if (window.innerWidth <= 1050) {
-        if (!container.classList.contains("reordered")) {
-            container.appendChild(document.querySelector(".contactinfo"));
-            container.appendChild(document.querySelector(".obj"));
-            container.appendChild(document.querySelector(".edu-cert"));
-            container.appendChild(document.querySelector(".skills"));
-            container.appendChild(document.querySelector(".projects"));
-            container.classList.add("reordered"); // Mark as reordered
-        }
-    } else {
-        // Reload page to restore original order on large screens
-        if (container.classList.contains("reordered")) {
-            location.reload();
-        }
+// Check if the screen width is 1050px or less
+if (window.innerWidth <= 1050) {
+    if (reorder) { // Ensure container exists
+        reorder.appendChild(document.querySelector(".contactinfo"));
+        reorder.appendChild(document.querySelector(".obj"));
+        reorder.appendChild(document.querySelector(".edu-cert"));
+        reorder.appendChild(document.querySelector(".skills"));
+        reorder.appendChild(document.querySelector(".projects"));
     }
 }
-
-// Run only when the page loads or screen size changes
-window.addEventListener("resize", reorderElements);
-window.addEventListener("DOMContentLoaded", reorderElements);
