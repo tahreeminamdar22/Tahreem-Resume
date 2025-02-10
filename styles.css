@@ -24,6 +24,7 @@ footer {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .left {
@@ -52,6 +53,7 @@ footer {
     }
     
     .container {
+        display: flex;
         flex-direction: column;
     }
     
@@ -59,7 +61,7 @@ footer {
         order: 1;
     }
     
-    .obj {
+   .right >  .obj {
         order: 2;
     }
     
