@@ -11,3 +11,4 @@ if (window.innerWidth <= 1050) {
         reorder.appendChild(document.querySelector(".projects"));
     }
 }
+document.getElementById("year").innerText = new Date().getFullYear();
