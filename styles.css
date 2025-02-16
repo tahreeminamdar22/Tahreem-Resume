@@ -66,6 +66,7 @@ footer {
     
     .contactinfo {
         order: 1;
+        height: 300px;
     }
     
    .right >  .obj {
